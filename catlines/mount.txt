@@ -1,0 +1,8 @@
+##mount drive
+sudo mkdir /mnt/[driveloc]
+sudo mount -t drvfs [Windows driveloc]: /mnt/[driveloc]
+
+##unmount drive 
+sudo umount /mnt/[driveloc]
+
+
