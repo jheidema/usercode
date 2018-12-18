@@ -1,0 +1,16 @@
+###Useful ROOT command line commands###
+
+-Making a piecewise TF1 function 
+TF1 *f3 = new TF1("f3","(x<[3])*0+(x>=[3])*[0]*(exp(-(x-[3])/[1])-exp(-(x-[3])/[2]))",0,5000)
+--use the piecewise definition in parenthesis and add two functions together. Can even be used with as a parameter.
+
+-Pull an object from another file directory
+TObj *name;
+_file#->GetObject("Name in _file# directory",name);
+--points object in currenty directory to object from another file directory.
+
+-Plot TTree vector or array branch against the index number
+TTree->Draw("vector:Iteration$>>h(maxIndex,0,maxIndex,ybins,ylow,yup)","","colz")
+
+
+
